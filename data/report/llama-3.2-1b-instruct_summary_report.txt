@@ -1,0 +1,48 @@
+Summary Report
+====================
+
+Model: llama-3.2-1b-instruct
+Total Entries: 100
+
+DataFrame Description:
+--------------------
+       input_tokens  llama-3.2-1b-instruct_numeric_perc  llama-3.2-1b-instruct_jaccard_sim  llama-3.2-1b-instruct_sequence  llama-3.2-1b-instruct_self_ev
+count    100.000000                        8.600000e+01                         100.000000                      100.000000                   9.600000e+01
+mean     872.350000                        2.884547e-01                           0.090649                        0.082120                   5.212988e+05
+std      288.228878                        2.979058e-01                           0.134936                        0.156007                   5.103056e+06
+min      206.000000                        8.130163e-13                           0.000000                        0.000000                   0.000000e+00
+25%      706.500000                        2.035034e-02                           0.000000                        0.000000                   0.000000e+00
+50%      846.000000                        1.978462e-01                           0.068966                        0.006822                   0.000000e+00
+75%     1040.500000                        4.702390e-01                           0.106961                        0.117647                   2.772500e+00
+max     1771.000000                        1.000000e+00                           1.000000                        1.000000                   5.000000e+07
+
+Evaluation Metrics (Averages):
+--------------------
+Average Self Evaluation:
+                            521298.763034375
+
+Average Numeric Percentage
+                            0.28845470284270996
+Average Jaccard Similarity:
+                            0.09064913537988988
+Average Sequence Matcher:
+                            0.08212000343833789
+
+Filtered DataFrame Counts:
+--------------------
+Correct answers with a 5% confidence range:
+                            3
+Correct answers with a 3% confidence range:
+                            3
+Correct answers with a 1% confidence range:
+                            1
+
+Sample Entry:
+--------------------
+Query: what is the percentage change in net periodic pension expense between 2004 and 2005?
+Label: 119%
+llama-3.2-1b-instruct answer: 
+                            377
+llama-3.2-1b-instruct reflection:
+                             [377]
+

@@ -1,0 +1,61 @@
+Summary Report
+====================
+
+Model: gpt-3.5-turbo
+Total Entries: 100
+
+Prompt Used:
+--------------------
+
+        You are a helpful assistant tasked with answering user queries
+        about a page with financial data.
+        Reflect on the data provided and produce an answer.
+        Report the exact answer at the end in brackets '[]'.
+        Answer example: 'From 2010 to 2014 it lasted 4 years. [4]'
+        
+
+DataFrame Description:
+--------------------
+       input_tokens  gpt-3.5-turbo_numeric_perc  gpt-3.5-turbo_jaccard_sim  gpt-3.5-turbo_sequence  gpt-3.5-turbo_self_ev
+count    100.000000                9.500000e+01                 100.000000              100.000000             100.000000
+mean     872.350000                7.793989e-01                   0.469426                0.518352               0.624000
+std      288.228878                3.500555e-01                   0.332635                0.349388               0.426844
+min      206.000000                5.714286e-08                   0.000000                0.000000               0.000000
+25%      706.500000                6.965524e-01                   0.164474                0.216667               0.000000
+50%      846.000000                9.965636e-01                   0.500000                0.593407               0.800000
+75%     1040.500000                9.996457e-01                   0.714286                0.800000               1.000000
+max     1771.000000                1.000000e+00                   1.000000                1.000000               1.000000
+
+Evaluation Metrics (Averages):
+--------------------
+Average Self Evaluation:
+                            0.624
+
+Average Numeric Percentage
+                            0.7793988762024824
+Average Jaccard Similarity:
+                            0.46942560507059883
+Average Sequence Matcher:
+                            0.5183515851275569
+
+Filtered DataFrame Counts:
+--------------------
+Correct answers with a 5% confidence range:
+                            61
+Correct answers with a 3% confidence range:
+                            60
+Correct answers with a 1% confidence range:
+                            53
+
+Sample Entry:
+--------------------
+Query: what portion of the future minimum payments are due in 2013?
+Label: 9.6%
+gpt-3.5-turbo answer: 
+                            $28.7 million / $297.8 million = 0.0962, which is equal to 9.62%
+gpt-3.5-turbo reflection:
+                            To determine the portion of future minimum payments due in 2013, you would look at the specific amount allocated for 2013 and compare it to the total future minimum payments.
+
+In this case, the future minimum payment due in 2013 is $28.7 million out of a total of $297.8 million.
+Therefore, the portion of the future minimum payments due in 2013 is 9.62%. [$28.7 million / $297.8 million = 0.0962, which is equal to 9.62%]
+

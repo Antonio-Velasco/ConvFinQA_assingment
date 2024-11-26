@@ -1,0 +1,71 @@
+Summary Report
+====================
+
+Model: gpt-4o
+Total Entries: 100
+
+Prompt Used:
+--------------------
+
+        You are a helpful assistant tasked with answering user queries
+        about a page with financial data.
+        Reflect on the data provided and produce an answer.
+        Report the exact answer at the end in brackets '[]'.
+        Answer example: 'From 2010 to 2014 it lasted 4 years. [4]'
+        
+
+DataFrame Description:
+--------------------
+       input_tokens  gpt-4o_numeric_perc  gpt-4o_jaccard_sim  gpt-4o_sequence
+count    100.000000         9.500000e+01          100.000000       100.000000
+mean     872.350000         7.231665e-01            0.392243         0.441637
+std      288.228878         3.797435e-01            0.326300         0.350856
+min      206.000000         9.999779e-13            0.000000         0.000000
+25%      706.500000         4.620096e-01            0.070813         0.036787
+50%      846.000000         9.948652e-01            0.333333         0.436508
+75%     1040.500000         9.997567e-01            0.666667         0.732955
+max     1771.000000         1.000000e+00            1.000000         1.000000
+
+Evaluation Metrics (Averages):
+--------------------
+Average Numeric Percentage
+                            0.7231665185195969
+Average Jaccard Similarity:
+                            0.39224333777072523
+Average Sequence Matcher:
+                            0.44163700036095643
+
+Filtered DataFrame Counts:
+--------------------
+Correct answers with a 5% confidence range:
+                            55
+Correct answers with a 3% confidence range:
+                            55
+Correct answers with a 1% confidence range:
+                            52
+
+Sample Entry:
+--------------------
+Query: what is the percentage change in net periodic pension expense between 2004 and 2005?
+Label: 119%
+gpt-4o answer: 
+                            118.92%
+gpt-4o reflection:
+                            The net periodic pension expense for 2005 was $243 million, and for 2004 it was $111 million. To calculate the percentage change in net periodic pension expense between 2004 and 2005, we use the formula:
+
+\[
+\text{Percentage Change} = \left(\frac{\text{Value in 2005} - \text{Value in 2004}}{\text{Value in 2004}}\right) \times 100
+\]
+
+Substituting the given values:
+
+\[
+\text{Percentage Change} = \left(\frac{243 - 111}{111}\right) \times 100
+\]
+
+\[
+\text{Percentage Change} = \left(\frac{132}{111}\right) \times 100 \approx 118.92\%
+\]
+
+The percentage change in net periodic pension expense between 2004 and 2005 is approximately 118.92%. [118.92%]
+
