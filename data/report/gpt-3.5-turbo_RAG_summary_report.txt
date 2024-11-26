@@ -1,0 +1,42 @@
+Summary Report
+====================
+
+Model: gpt-3.5-turbo
+Total Entries: 100
+
+Augmente Retrieval Revall:
+--------------------
+16.0
+
+DataFrame Description:
+--------------------
+       input_tokens  gpt-3.5-turbo_numeric_perc  gpt-3.5-turbo_jaccard_sim  gpt-3.5-turbo_sequence  gpt-3.5-turbo_self_ev
+count    100.000000                9.600000e+01                 100.000000              100.000000             100.000000
+mean     872.350000                6.392784e-01                   0.320274                0.357746               0.483400
+std      288.228878                4.002831e-01                   0.291966                0.321968               0.452379
+min      206.000000                5.714286e-08                   0.000000                0.000000               0.000000
+25%      706.500000                1.962432e-01                   0.076442                0.048036               0.000000
+50%      846.000000                8.171039e-01                   0.222222                0.296703               0.500000
+75%     1040.500000                9.991222e-01                   0.517857                0.666667               1.000000
+max     1771.000000                1.000000e+00                   1.000000                1.000000               1.000000
+
+Evaluation Metrics (Averages):
+--------------------
+Average Self Evaluation:
+                            0.48340000000000005
+
+Average Numeric Percentage
+                            0.6392783865136628
+Average Jaccard Similarity:
+                            0.3202741526084767
+Average Sequence Matcher:
+                            0.3577462461422044
+
+Filtered DataFrame Counts:
+--------------------
+Correct answers with a 5% confidence range:
+                            41
+Correct answers with a 3% confidence range:
+                            41
+Correct answers with a 1% confidence range:
+                            38
